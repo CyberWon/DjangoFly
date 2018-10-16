@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>admin - template</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link rel="icon" href="../img/web/web.ico"/>
+    <link rel="stylesheet" href="../layui/css/layui.css"/>
+    <link rel="stylesheet" href="../css/app.css"/>
+<body ontouchstart="">
+
+<!-- 应用 -->
+<div id="VIP_app">
+
+    <!-- 标题 title -->
+    <div class="vip-title user-select">后台模板管理系统</div><!-- active -->
+
+    <!-- 导航 nav -->
+    <div class="vip-nav user-select">
+
+        <ul class="vip-nav-user">
+            <li>
+                <i class="vip-icon is-sub-nav" vip-title="用户" title="用户">&#xe61c;</i>
+                <div class="vip-sub-nav layui-anim vip-anim-left vip-sub-nav-bottom">
+                    <div class="layui-card">
+                        <h1 class="layui-card-header layui-elip">用户(admin)</h1>
+                        <div class="layui-card-body">
+
+                            <div class="layui-row layui-show">
+                                <div class="layui-col-xs12 layui-elip" vip-href="user.html" title="个人中心">个人中心</div>
+                                <div class="layui-col-xs12 layui-elip" vip-href="pass.html" title="更改密码">更改密码</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <i class="vip-icon is-sub-nav" vip-title="主题" title="主题">&#xe789;</i>
+                <div class="vip-sub-nav layui-anim vip-anim-left vip-sub-nav-bottom">
+                    <div class="layui-card">
+                        <h1 class="layui-card-header layui-elip">主题</h1>
+                        <div class="layui-card-body">
+
+                            <div class="layui-row layui-show vip-theme">
+                                <!--<div class="layui-col-xs6 layui-elip layui-bg-gray" title="默认" vip-theme="default">默认</div>
+                                <div class="layui-col-xs6 layui-elip layui-bg-black" title="黑色" vip-theme="black">黑色</div>
+                                <div class="layui-col-xs6 layui-elip layui-bg-green" title="绿色" vip-theme="green">绿色</div>
+                                <div class="layui-col-xs6 layui-elip layui-bg-orange" title="橙色" vip-theme="orange">橙色</div>
+                                <div class="layui-col-xs6 layui-elip layui-bg-blue" title="蓝色" vip-theme="blue">蓝色</div>
+                                <div class="layui-col-xs6 layui-elip layui-bg-red" title="红色" vip-theme="red">红色</div>-->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <i class="vip-icon" vip-href="msg.html" vip-title="通知" title="您有 9+ 条通知">&#xe642;</i>
+                <span class="layui-badge-dot"></span>
+                <div class="vip-sub-nav-tips layui-anim vip-anim-left vip-sub-nav-bottom">您有 9+ 条通知</div>
+            </li>
+            <li>
+                <i class="vip-icon vip-out" vip-title="退出" title="退出">&#xe622;</i>
+                <div class="vip-sub-nav-tips layui-anim vip-anim-left vip-sub-nav-bottom">退出</div>
+            </li>
+        </ul>
+
+        <div class="vip-nav-btn">
+            <div class="width-height-all">
+                <ul>
+                    <!--<li>
+                        <i class="vip-icon is-sub-nav">&#xe612;</i>
+                        <div class="vip-sub-nav">
+                            <div class="layui-card">
+                                <h1 class="layui-card-header">UI元素</h1>
+                                <div class="layui-card-body">
+
+                                    <div class="layui-row">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="vip-icon active" vip-href="dashboard.html" vip-title="仪表板" title="仪表板">&#xe6bd;</i>
+                        <div class="vip-sub-nav">仪表板</div>
+                    </li>
+                    <li>
+                        <i class="vip-icon is-sub-nav">&#xe6ff;</i>
+                        <div class="vip-sub-nav">
+                            <div class="layui-card">
+                                <h1 class="layui-card-header">基础</h1>
+                                <div class="layui-card-body">
+
+                                    <div class="layui-row">
+                                        <div class="layui-col-xs6 layui-elip" vip-href="btn.html" title="按钮">按钮</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="form.html" title="表单">表单</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="nav.html" title="导航">导航</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="tab.html" title="选项卡">选项卡</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="progress.html" title="进度条">进度条</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="panel.html" title="面板">面板</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="badge.html" title="徽章">徽章</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="timeline.html" title="时间线">时间线</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="auxiliary.html" title="辅助">辅助</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="animation.html" title="动画">动画</div>
+                                        <hr>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="alert.html" title="弹窗">弹窗</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="paging.html" title="分页">分页</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="upload.html" title="文件上传">文件上传</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="datetime.html" title="日期时间">日期时间</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="carousel.html" title="轮播">轮播</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="util.html" title="工具集">工具集</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="rich-text.html" title="富文本">富文本</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="code.html" title="代码修饰器">代码修饰器</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="vip-icon is-sub-nav">&#xe651;</i>
+                        <div class="vip-sub-nav">
+                            <div class="layui-card">
+                                <h1 class="layui-card-header">页面</h1>
+                                <div class="layui-card-body">
+
+                                    <div class="layui-row">
+                                        <div class="layui-col-xs6 layui-elip" vip-href="guide.html" title="文档">文档</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="_blank.html" title="空白页">空白页</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="000.html" title="缺省页">缺省页</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="404.html" title="404页">404页</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="500.html" title="500页">500页</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="faq.html" title="FAQ">FAQ</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="login.html" title="登录页">登录页</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="lock.html" title="锁屏">锁屏</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="label.html" title="标签墙">标签墙</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="calendar.html" title="日历">日历</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="photo.html" title="相册">相册</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="load-animation.html" title="加载动画">加载动画</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="vip-icon is-sub-nav">&#xe6fc;</i>
+                        <div class="vip-sub-nav">
+                            <div class="layui-card">
+                                <h1 class="layui-card-header">表格</h1>
+                                <div class="layui-card-body">
+
+                                    <div class="layui-row">
+                                        <div class="layui-col-xs6 layui-elip" vip-href="table-static.html" title="静态">静态</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="table-data.html" title="数据表格">数据表格</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="table-data-multiple.html" title="多数据表">多数据表</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="table-tree.html" title="树结构表">树结构表</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="vip-icon is-sub-nav">&#xe66c;</i>
+                        <div class="vip-sub-nav">
+                            <div class="layui-card">
+                                <h1 class="layui-card-header">统计图</h1>
+                                <div class="layui-card-body">
+
+                                    <div class="layui-row">
+                                        <div class="layui-col-xs6 layui-elip" vip-href="chart.html" title="ECharts">ECharts</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="chart-rickshaw.html" title="Rickshaw">Rickshaw</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="chart-peity.html" title="Peity">Peity</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="chart-sparkline.html" title="Sparkline">Sparkline</div>
+                                        <div class="layui-col-xs6 layui-elip" vip-href="chart-combination.html" title="组合">组合</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="vip-icon" vip-href="icons.html" vip-title="图标">&#xe767;</i>
+                        <div class="vip-sub-nav">图标</div>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+
+        <div class="vip-nav-logo">
+            <!--<a href="javascript:;" vip-href="dashboard.html" vip-title="仪表板" title="后台模板管理系统"><img src="../img/web/logo.png" alt="logo" /></a>-->
+        </div>
+
+    </div>
+
+    <!-- 内容 content -->
+    <iframe class="vip-body"></iframe>
+
+    <!-- 右侧选项卡 aside-tab -->
+    <div class="vip-aside user-select">
+        <!--<ul>
+            <li class="layui-elip vip-home active" vip-href="dashboard.html" title="仪表板">仪表板</li>
+            <hr class="layui-bg-black" />
+            <li class="vip-saide-btn vip-refresh" title="刷新">
+                <i class="vip-icon layui-anim layui-anim-rotate layui-anim-loop">&#xe68a;</i>
+            </li>
+            <li class="vip-saide-btn vip-close" title="关闭">
+                <i class="vip-icon">&#xe624;</i>
+            </li>
+        </ul>-->
+    </div>
+
+    <!-- 滑动操作面板 touch panel -->
+    <div class="vip-touch"></div>
+
+</div>
+
+<!-- 右侧选项卡TPL aside-tab TPL -->
+<script type="text/html" id="tabTpl">
+    <ul>
+        {{#  layui.each(d, function(index, item){ }}
+            {{# if(item.now == 1){ }}
+            <li class="layui-elip vip-home active" vip-href="{{ item.href }}" title="{{ item.title }}">{{ item.title }}</li>
+            {{# }else { }}
+            <li class="layui-elip vip-home" vip-href="{{ item.href }}" title="{{ item.title }}">{{ item.title }}</li>
+            {{# } }}
+        {{# }) }}
+        <hr class="layui-bg-black" />
+        <li class="vip-saide-btn vip-refresh" title="刷新">
+            <i class="vip-icon layui-anim layui-anim-rotate layui-anim-loop">&#xe68a;</i>
+        </li>
+        <li class="vip-saide-btn vip-close" title="关闭">
+            <i class="vip-icon">&#xe624;</i>
+        </li>
+        <li class="vip-saide-btn vip-other-close" title="关闭其他">
+            <i class="vip-icon">&#xe66e;</i>
+        </li>
+    </ul>
+</script>
+<!-- logoTPl -->
+<script type="text/html" id="logoTpl">
+    <a href="javascript:;" vip-href="{{ d.href }}" vip-title="{{ d.title }}" title="{{ d.title }}"><img src="{{ d.logo }}" alt="{{ d.title }}" /></a>
+</script>
+<!-- 主导航TPL nav TPL -->
+<script type="text/html" id="navTpl">
+    {{#  layui.each(d.list, function(index, item){ }}
+    <li>
+        {{# if(!item.list){ }}
+        <i class="vip-icon" vip-href="{{ item.href }}" vip-title="{{ item.title }}" title="{{ item.title }}">{{ item.icon }}</i>
+        <div class="vip-sub-nav-tips layui-anim vip-anim-left">{{ item.title }}</div>
+        {{# }else{ }}
+        <i class="vip-icon is-sub-nav" vip-title="{{ item.title }}" title="{{ item.title }}">{{ item.icon }}</i>
+        <div class="vip-sub-nav layui-anim vip-anim-left">
+            <div class="layui-card">
+                <h1 class="layui-card-header layui-elip">{{ item.title }}</h1>
+                <div class="layui-card-body">
+                    {{# if(item.list[0].list){ }}
+                        <span>
+                            {{#  layui.each(item.list, function(k, v){ }}
+                                {{# if(k == 0){ }}
+                                <i class="vip-icon active" title="{{ v.title }}">{{ v.icon }}</i>
+                                {{# }else{ }}
+                                <i class="vip-icon" title="{{ v.title }}">{{ v.icon }}</i>
+                                {{# } }}
+                            {{# }) }}
+                        </span>
+                        {{#  layui.each(item.list, function(k, v){ }}
+                            {{# if(k == 0){ }}
+                            <div class="layui-row layui-show">
+                            {{# }else{ }}
+                            <div class="layui-row">
+                            {{# } }}
+                                {{#  layui.each(v.list, function(kk, vv){ }}
+                                <div class="layui-col-xs{{ d.cfg?d.cfg.width:d.cfg.width }} layui-elip" vip-href="{{ vv.href }}" vip-title="{{ vv.title }}" vip-blank="{{ vv.blank||'' }}" title="{{ vv.title }}">{{ vv.title }}</div>
+                                {{# }) }}
+                            </div>
+                        {{# }) }}
+                    {{# }else{ }}
+                        <div class="layui-row layui-show">
+                            {{#  layui.each(item.list, function(kk, vv){ }}
+                            <div class="layui-col-xs{{ d.cfg?d.cfg.width:d.cfg.width }} layui-elip" vip-href="{{ vv.href }}" vip-title="{{ vv.title }}" vip-blank="{{ vv.blank||'' }}" title="{{ vv.title }}">{{ vv.title }}</div>
+                            {{# }) }}
+                        </div>
+                    {{# } }}
+                </div>
+            </div>
+        </div>
+        {{# } }}
+    </li>
+    {{#  }) }}
+</script>
+<!-- 主题 theme -->
+<script type="text/html" id="themeTpl">
+    {{#  layui.each(d.list, function(index, item){ }}
+    <div class="layui-col-xs{{ d.cfg.width||6 }} layui-elip {{ item.class }}" title="{{ item.title }}" vip-theme="{{ item.skin }}">{{ item.title }}</div>
+    {{#  }); }}
+</script>
+
+<script type="text/javascript" src="../layui/layui.js"></script>
+<script type="text/javascript">
+layui.config({base: '../js/'}).use(['app','vipPush','layer'],function(){
+    var app = layui.app, vipPush = layui.vipPush, layer = layui.layer;
+
+    // 初始化配置 init
+    app.init({
+        logo: '../img/web/logo.png'
+        ,title: '后台模板管理系统'
+        ,bodyTitle: '仪表板'
+        ,bodyHref: 'dashboard.html'
+        //,method: 'post'
+        ,loading: '<div class="sk-rotating-plane mar-no"></div>'
+        ,scrollTopVal: 10
+        ,asideMaxNum: 10
+        ,isTitleShow: true
+        //,themeSrc: '../css/theme/'                                          // 1.2.1新增
+        ,touchTitle: '触控面板(左右滑动丶单击)'                                // 1.2.1新增
+        ,out: function(){
+            layer.confirm('确定退出了?', {title:'提示'}, function(index){
+                layer.close(index);
+                app.msg('退出了');
+            });
+        }
+    });
+
+    // 主题 theme
+    app.theme({
+        cfg:{
+            width: 6
+            ,src: '../css/theme/'                                          // 1.2.1新增
+        }
+        ,list:[
+            {skin:'default',title:'默认',class:'layui-bg-gray'}
+            ,{skin:'black',title:'黑色',class:'layui-bg-black'}
+            ,{skin:'green',title:'绿色',class:'layui-bg-green'}
+            ,{skin:'orange',title:'橙色',class:'layui-bg-orange'}
+            ,{skin:'blue',title:'蓝色',class:'layui-bg-blue'}
+            ,{skin:'red',title:'红色',class:'layui-bg-red'}
+        ]
+        ,tpl: '#themeTpl'
+        ,el: '.vip-theme'
+    });
+
+    // 导航菜单 nav
+    app.nav({
+        cfg:{
+            width: 6
+        }
+        ,url: '../json/demo-nav.json'
+        ,where: {}
+        ,tpl: '#navTpl'
+        ,el: '.vip-nav .vip-nav-btn ul'
+    });
+
+    // logo
+    app.logo({
+        logo: '../img/web/logo.png'
+        ,title: '仪表板'
+        ,href: 'dashboard.html'
+        ,tpl: '#logoTpl'
+        ,el: '.vip-nav-logo'
+    });
+
+    /*// 广告插件 push
+    vipPush.render({
+        url: '../json/demo-push.json'
+        ,stylesheet: '../css/vipPush.css'
+        ,title: '推荐'
+    });*/
+
+});
+</script>
+</body>
+</html>

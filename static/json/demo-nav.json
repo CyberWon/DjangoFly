@@ -1,0 +1,257 @@
+{
+  "code": 0
+  ,"msg": "获取成功"
+  ,"cfg": {
+    "width": 6
+  }
+  ,"list": [{
+    "title": "监控台"
+    ,"icon": "&#xe777;"
+    ,"list": [{
+      "title": "仪表板"
+    ,"href": "dashboard.html"
+    ,"icon": "&#xe765;"
+    },{
+      "title": "工作台"
+    ,"href": "workbench.html"
+    ,"icon": "&#xe765;"
+    }]
+  },{
+    "title": "基础-LAYUI"
+    ,"icon": "&#xe618;"
+    ,"list": [{
+      "title": "元素",
+      "icon": "&#xe672;",
+      "list": [{
+          "title": "按钮",
+          "icon": "&#xe644;",
+          "href": "btn.html"
+      },{
+          "title": "表单",
+          "icon": "&#xe644;",
+          "href": "form.html"
+      },{
+          "title": "导航",
+          "icon": "&#xe644;",
+          "href": "nav.html"
+      },{
+          "title": "选项卡",
+          "icon": "&#xe644;",
+          "href": "tab.html"
+      },{
+          "title": "进度条",
+          "icon": "&#xe644;",
+          "href": "progress.html"
+      },{
+          "title": "面板",
+          "icon": "&#xe644;",
+          "href": "panel.html"
+      },{
+          "title": "徽章",
+          "icon": "&#xe644;",
+          "href": "badge.html"
+      },{
+          "title": "时间线",
+          "icon": "&#xe644;",
+          "href": "timeline.html"
+      },{
+          "title": "辅助",
+          "icon": "&#xe644;",
+          "href": "auxiliary.html"
+      },{
+          "title": "动画",
+          "icon": "&#xe644;",
+          "href": "animation.html"
+      }]
+    },{
+      "title": "模块",
+      "icon": "&#xe76d;",
+      "list": [{
+        "title": "弹窗",
+        "icon": "&#xe644;",
+        "href": "alert.html"
+      },{
+          "title": "分页",
+          "icon": "&#xe644;",
+          "href": "paging.html"
+      },{
+          "title": "文件上传",
+          "icon": "&#xe644;",
+          "href": "upload.html"
+      },{
+          "title": "日期",
+          "icon": "&#xe644;",
+          "href": "datetime.html"
+      },{
+          "title": "轮播",
+          "icon": "&#xe644;",
+          "href": "carousel.html"
+      },{
+          "title": "工具集",
+          "icon": "&#xe644;",
+          "href": "util.html"
+      },{
+          "title": "富文本",
+          "icon": "&#xe644;",
+          "href": "rich-text.html"
+      },{
+          "title": "代码修饰器",
+          "icon": "&#xe644;",
+          "href": "code.html"
+      },{
+          "title": "评分",
+          "icon": "&#xe644;",
+          "href": "rate.html"
+      },{
+          "title": "颜色选择器",
+          "icon": "&#xe644;",
+          "href": "colorpicker.html"
+      },{
+          "title": "滑块",
+          "icon": "&#xe644;",
+          "href": "slider.html"
+      }]
+    }]
+  },{
+    "title": "扩展"
+    ,"icon": "&#xe70f;"
+    ,"list": [{
+      "title": "页面"
+      ,"icon": "&#xe638;"
+      ,"list": [{
+        "title": "文档"
+        ,"icon": "&#xe644;"
+        ,"href": "guide.html"
+      },{
+        "title": "空白"
+        ,"icon": "&#xe644;"
+        ,"href": "_blank.html"
+      },{
+        "title": "缺省"
+        ,"icon": "&#xe644;"
+        ,"href": "000.html"
+      },{
+        "title": "404"
+        ,"icon": "&#xe644;"
+        ,"href": "404.html"
+      },{
+        "title": "500"
+        ,"icon": "&#xe644;"
+        ,"href": "500.html"
+      },{
+        "title": "FAQ"
+        ,"icon": "&#xe644;"
+        ,"href": "faq.html"
+      },{
+        "title": "登录"
+        ,"icon": "&#xe644;"
+        ,"href": "login.html"
+      },{
+        "title": "锁屏"
+        ,"icon": "&#xe644;"
+        ,"href": "lock.html"
+      },{
+        "title": "标签墙"
+        ,"icon": "&#xe644;"
+        ,"href": "label.html"
+      },{
+        "title": "日历"
+        ,"icon": "&#xe644;"
+        ,"href": "calendar.html"
+      },{
+        "title": "相册"
+        ,"icon": "&#xe644;"
+        ,"href": "photo.html"
+      },{
+        "title": "商品"
+        ,"icon": "&#xe644;"
+        ,"href": "goods.html"
+      },{
+        "title": "加载动画"
+        ,"icon": "&#xe644;"
+        ,"href": "load-animation.html"
+      }]
+    },{
+    "title": "组件(第三方扩展)"
+  ,"icon": "&#xe773;"
+  ,"list": [{
+      "title": "权限树"
+      ,"icon": "&#xe644;"
+      ,"href": "auth-tree.html"
+    },{
+      "title": "多级联动"
+      ,"icon": "&#xe644;"
+      ,"href": "urban-linkage.html"
+    },{
+      "title": "下拉多选"
+      ,"icon": "&#xe644;"
+      ,"href": "form-selects.html"
+    },{
+      "title": "下拉多选-v4"
+      ,"icon": "&#xe644;"
+      ,"href": "form-selects-v4.html"
+    },{
+      "title": "广告插件"
+      ,"icon": "&#xe67d;"
+      ,"href": "vip-push.html"
+    },{
+      "title": "更多扩展"
+      ,"icon": "&#xe668;"
+      ,"href": "https://fly.layui.com/extend/"
+      ,"blank": true
+    }]
+  }]
+  },{
+    "title": "表格"
+    ,"icon": "&#xe6fc;"
+    ,"list": [{
+      "title": "静态表格"
+      ,"icon": "&#xe644;"
+      ,"href": "table-static.html"
+    },{
+      "title": "数据表格"
+      ,"icon": "&#xe644;"
+      ,"href": "table-data.html"
+    },{
+      "title": "多数据表"
+      ,"icon": "&#xe644;"
+      ,"href": "table-data-multiple.html"
+    },{
+      "title": "树结构表"
+      ,"icon": "&#xe644;"
+      ,"href": "table-tree.html"
+    }]
+  },{
+    "title": "统计图"
+    ,"icon": "&#xe66c;"
+    ,"list": [{
+      "title": "ECharts"
+      ,"icon": "&#xe644;"
+      ,"href": "chart.html"
+    },{
+      "title": "Rickshaw"
+      ,"icon": "&#xe644;"
+      ,"href": "chart-rickshaw.html"
+    },{
+      "title": "Peity"
+      ,"icon": "&#xe644;"
+      ,"href": "chart-peity.html"
+    },{
+      "title": "Sparkline"
+      ,"icon": "&#xe644;"
+      ,"href": "chart-sparkline.html"
+    },{
+      "title": "组合"
+      ,"icon": "&#xe644;"
+      ,"href": "chart-combination.html"
+    }]
+  },{
+    "title": "图标"
+    ,"icon": "&#xe77c;"
+    ,"href": "icons.html"
+  },{
+    "title": "反馈"
+    ,"icon": "&#xe64b;"
+    ,"href": "https://vip-admin.com/feedback.html"
+  }]
+}
